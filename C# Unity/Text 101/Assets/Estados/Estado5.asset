@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1782b3c20bbce8b4aaa35f84cc1bf908, type: 3}
+  m_Name: Estado5
+  m_EditorClassIdentifier: 
+  historia: "Voc\xEA desvia dos ataques de todos os piratas e ainda ri da cara deles!\n\n1
+    - Continue em frente."
+  proximoEstado:
+  - {fileID: 11400000, guid: b05ade22c51de1944bacdce2a7d7df96, type: 2}

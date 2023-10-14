@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/0 - Menu Inicial.unity
+    guid: 35e82972e91ad0741b42b4899c702884
+  - enabled: 1
+    path: Assets/Scenes/1 - Fase 1.unity
+    guid: 178ae54920c0dcd4ca48ed7244b45b34
+  - enabled: 1
+    path: Assets/Scenes/1 - Fase 2.unity
+    guid: 5c4ce2135b7eee24a9fba805cfab330c
+  - enabled: 1
+    path: Assets/Scenes/1 - Fase 3.unity
+    guid: b11142a3673d4394babae58cf9feccd2
+  - enabled: 1
+    path: Assets/Scenes/1 - Fase 4.unity
+    guid: 50eebaab2b609e74796aafb3b91b5f06
+  - enabled: 1
+    path: Assets/Scenes/1 - Fase 5.unity
+    guid: 53368e3061f543d4386ead41f4632040
+  - enabled: 1
+    path: Assets/Scenes/2 - Vitoria.unity
+    guid: 38639cc015ec2a34ba9d1099e9afe117
+  - enabled: 1
+    path: Assets/Scenes/2 - Derrota.unity
+    guid: 0cfb4052f4ddea74aacc6fac4fc4b0df
+  m_configObjects: {}

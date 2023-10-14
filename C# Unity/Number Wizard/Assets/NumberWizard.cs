@@ -1,40 +1,57 @@
-﻿using UnityEngine; 
-using System.Collections;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class NumberWizard : MonoBehaviour { 
+public class NumberWizard : MonoBehaviour
+{
+    // Variáveis globais usadas no programa
+    int min, max, chute;
 
-	int max , min, chute, maxTentativa = 10; //variáveis utilizadas ao longo do código
-	public Text text; //texto modificado no progama
+    // Start is called before the first frame update
+    void Start()
+    {
+        StartGame();
+    }
 
-	void Start () { //inicialização
-		StartGame(); 
-	}
-	void StartGame () { //função inicial; os valores de max e min poderiam ter sido ditos antes
-		max = 1000; 
-		min = 1;
-		chute = Random.Range (min, max);
-		max = max + 1;
-		text.text = chute.ToString ();
-	}
+    void StartGame()
+    {
+        max = 1000;
+        min = 1;
+        chute = 500;
 
-	public void ChuteHiguer (){ //para valor maior, diz que a anterior é a "minima"
-		min = chute; 
-		ProxChute();
-	}
-	public void ChuteLower (){ //para valor menor, diz que a anterior era a "maxima"
-		max = chute; 
-		ProxChute(); 
-	}
-		
-	void ProxChute () { //proxima tentativa. faz um chute entre a minima (incluindo ela) e a maxima (sem contar com ela) dadas e mostra na tela
-		chute = Random.Range (min, max); 
-		text.text = chute.ToString();
-		maxTentativa = maxTentativa - 1; //vai diminuindo de acordo com as tentativas, até o numero limite
-		if (maxTentativa <= 0) {
-			SceneManager.LoadScene ("Win");
-		}
-		 
-	}
+        Debug.Log("Bem-vindo ao number wizard");
+        Debug.Log("Pense em um número...");
+        Debug.Log("O máximo é: " + max);
+        Debug.Log("O mínimo é: " + min);
+        Debug.Log("Primeiramente, é maior ou menor que " + chute + "?");
+        Debug.Log("Seta pra cima para maior, seta para baixo para menor, enter para correto");
+        max = max + 1;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            Debug.Log("Seta pra cima apertada ");
+            min = chute;
+            ProximoChute();
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Debug.Log("Seta pra baixo apertada ");
+            max = chute;
+            ProximoChute();
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Ora ora, parece que temos um Xeroque Rolmes aqui");
+            StartGame();
+        }
+        void ProximoChute()
+        {
+            chute = (min + max) / 2;
+            Debug.Log("É maior ou menor que " + chute + "?");
+        }
+    }
 }

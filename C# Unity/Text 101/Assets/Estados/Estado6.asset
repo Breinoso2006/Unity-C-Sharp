@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1782b3c20bbce8b4aaa35f84cc1bf908, type: 3}
+  m_Name: Estado6
+  m_EditorClassIdentifier: 
+  historia: "Alvida, a capit\xE3 do barco, d\xE1 as caras! Ap\xF3s v\xE1rios minutos
+    de porradaria, voc\xEA consegue venc\xEA-la.\n\n1 - Fim"
+  proximoEstado:
+  - {fileID: 11400000, guid: 776bfdf2564c00d42b0a32adc46a5a40, type: 2}

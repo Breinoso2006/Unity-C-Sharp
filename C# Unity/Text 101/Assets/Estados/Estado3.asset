@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1782b3c20bbce8b4aaa35f84cc1bf908, type: 3}
+  m_Name: Estado3
+  m_EditorClassIdentifier: 
+  historia: "Subindo as escadas at\xE9 o conv\xE9s, voc\xEA se depara com um grupo
+    de piratas, prontos para te atacar.\n\n1 - Enfrent\xE1-los.\n2 - Fugir."
+  proximoEstado:
+  - {fileID: 11400000, guid: d6ea065dd2d928a4890a6c648fa92197, type: 2}
+  - {fileID: 11400000, guid: ee24bbfaf5c0ac84eb7395ec92113fca, type: 2}

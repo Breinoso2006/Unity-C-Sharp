@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1782b3c20bbce8b4aaa35f84cc1bf908, type: 3}
+  m_Name: EstadoInicial
+  m_EditorClassIdentifier: 
+  historia: "Voc\xEA \xE9 um jovem determinado a se tornar o Rei dos Piratas. Ap\xF3s
+    uma s\xE9rie de incidentes inexplic\xE1veis, acaba dormindo dentro de um barril
+    que \xE9 resgatado por um navio pirata. Dentro do barril, voc\xEA \xE9 colocado
+    no por\xE3o. Aparentemente n\xE3o h\xE1 ningu\xE9m no local.\n\n1 - Sair do barril
+    antes que algu\xE9m apare\xE7a.\n2- Esperar algu\xE9m aparecer para dar um susto."
+  proximoEstado:
+  - {fileID: 11400000, guid: 713d8c5b4de8eae49a3aa643d02610c7, type: 2}
+  - {fileID: 11400000, guid: 3cc90fe3897c6fd4c9370fcbf9c47c80, type: 2}
